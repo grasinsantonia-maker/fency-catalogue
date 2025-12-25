@@ -323,12 +323,12 @@
         const navHtml = imageCount > 1 ? `
             <button class="product-carousel-nav product-carousel-prev" data-product="${product.id}">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                    <path d="M15 18l-6-6 6-6"/>
+                    <path d="M9 18l6-6-6-6"/>
                 </svg>
             </button>
             <button class="product-carousel-nav product-carousel-next" data-product="${product.id}">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                    <path d="M9 18l6-6-6-6"/>
+                    <path d="M15 18l-6-6 6-6"/>
                 </svg>
             </button>
         ` : '';
