@@ -136,11 +136,12 @@ button {
     background: rgba(15, 15, 26, 0.98);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    padding: var(--space-sm) var(--space-md);
+    padding: var(--space-sm) var(--space-lg);
     padding-top: max(var(--space-sm), env(safe-area-inset-top));
-    padding-left: max(var(--space-md), env(safe-area-inset-left));
-    padding-right: max(var(--space-md), env(safe-area-inset-right));
+    padding-left: max(var(--space-lg), env(safe-area-inset-left));
+    padding-right: max(var(--space-lg), env(safe-area-inset-right));
     transition: all var(--transition-base);
+    overflow: visible;
 }
 
 .header.scrolled {
@@ -159,9 +160,15 @@ button {
     gap: var(--space-lg);
 }
 
+.logo {
+    flex-shrink: 0;
+}
+
 .logo img {
     height: 45px;
     width: auto;
+    max-width: 120px;
+    object-fit: contain;
     transition: transform var(--transition-base);
 }
 
@@ -263,6 +270,9 @@ button {
 }
 
 @media (max-width: 640px) {
+    .header {
+        padding: var(--space-xs) var(--space-md);
+    }
     .warranty-badge {
         padding: 4px var(--space-sm);
         font-size: 0.625rem;
@@ -272,21 +282,30 @@ button {
         width: 12px;
         height: 12px;
     }
-    .logo img { height: 36px; }
+    .logo img {
+        height: 32px;
+        max-width: 100px;
+    }
     .phone-btn {
         padding: var(--space-xs) var(--space-sm);
         border-radius: var(--radius-md);
     }
 }
 
-@media (max-width: 400px) {
-    .warranty-badge { display: none; }
-}
-
 @media (max-width: 480px) {
-    .logo img { height: 32px; }
+    .header {
+        padding: var(--space-xs) var(--space-sm);
+    }
+    .logo img {
+        height: 28px;
+        max-width: 85px;
+    }
     .header-actions {
         gap: var(--space-xs);
+    }
+    .warranty-badge {
+        padding: 3px var(--space-xs);
+        font-size: 0.5625rem;
     }
 }
 
