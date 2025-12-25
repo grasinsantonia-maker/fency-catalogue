@@ -133,16 +133,23 @@ button {
     left: 0;
     right: 0;
     z-index: 1000;
-    background: rgba(15, 15, 26, 0.95);
+    background: rgba(15, 15, 26, 0.98);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    padding: var(--space-sm) 0;
+    padding: var(--space-sm) var(--space-md);
+    padding-top: max(var(--space-sm), env(safe-area-inset-top));
+    padding-left: max(var(--space-md), env(safe-area-inset-left));
+    padding-right: max(var(--space-md), env(safe-area-inset-right));
     transition: all var(--transition-base);
 }
 
 .header.scrolled {
     background: rgba(15, 15, 26, 0.98);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+}
+
+.header .container {
+    padding: 0;
 }
 
 .header-content {
