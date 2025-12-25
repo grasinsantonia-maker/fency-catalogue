@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#0f0f1a">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Fency | קטלוג גדרות ויניל פרימיום</title>
+    <meta name="description" content="קטלוג גדרות ויניל פרימיום - 10 שנות אחריות, ללא תחזוקה, תקן אמריקאי ASTM">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/styles.css?v=4">
+</head>
+<body>
+    <!-- Minimal Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="#" class="logo">
+                    <img src="assets/images/brand/logo-fency-convert-white-01.png" alt="Fency">
+                </a>
+                <div class="header-actions">
+                    <span class="warranty-badge">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/>
+                        </svg>
+                        10 שנות אחריות
+                    </span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ========================================
+         HERO CAROUSEL - Full Screen Featured
+         ======================================== -->
+    <section class="hero-carousel" id="featured">
+        <div class="hero-carousel-track" id="heroCarousel">
+            <!-- Slides will be populated by JS -->
+        </div>
+        <div class="hero-carousel-controls">
+            <button class="hero-nav hero-prev" aria-label="הקודם">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 18l6-6-6-6"/>
+                </svg>
+            </button>
+            <div class="hero-dots" id="heroDots"></div>
+            <button class="hero-nav hero-next" aria-label="הבא">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M15 18l-6-6 6-6"/>
+                </svg>
+            </button>
+        </div>
+    </section>
+
+    <!-- ========================================
+         VIDEO SHOWCASE SECTION
+         ======================================== -->
+    <section class="video-showcase">
+        <div class="video-container">
+            <video autoplay muted loop playsinline id="showcaseVideo" poster="assets/images/products/gilboa/גלבוע1-1024x682.jpg">
+                <!-- Add your video source here -->
+                <source src="" type="video/mp4">
+            </video>
+            <div class="video-fallback" id="videoFallback">
+                <div class="video-fallback-slider" id="videoFallbackSlider">
+                    <!-- Animated Ken Burns slideshow as video fallback -->
+                </div>
+            </div>
+            <div class="video-overlay"></div>
+            <div class="video-content">
+                <span class="video-badge">קולקציית 2024</span>
+                <h2 class="video-title">גדרות ויניל פרימיום</h2>
+                <p class="video-subtitle">איכות אמריקאית ללא פשרות</p>
+                <div class="video-features">
+                    <div class="vf-item">
+                        <span class="vf-number">10</span>
+                        <span class="vf-label">שנות אחריות</span>
+                    </div>
+                    <div class="vf-divider"></div>
+                    <div class="vf-item">
+                        <span class="vf-number">0</span>
+                        <span class="vf-label">תחזוקה</span>
+                    </div>
+                    <div class="vf-divider"></div>
+                    <div class="vf-item">
+                        <span class="vf-number">ASTM</span>
+                        <span class="vf-label">תקן אמריקאי</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         CATEGORY SHOWCASE - Large Visual Sections
+         ======================================== -->
+    <section class="categories-showcase" id="categories">
+        <div class="category-section category-privacy">
+            <div class="category-visual">
+                <div class="category-carousel" data-category="privacy">
+                    <div class="category-slides" id="privacySlides"></div>
+                    <div class="category-nav">
+                        <button class="cat-nav cat-prev" data-category="privacy">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 18l-6-6 6-6"/></svg>
+                        </button>
+                        <button class="cat-nav cat-next" data-category="privacy">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="category-content">
+                <span class="category-tag">קטגוריה</span>
+                <h2 class="category-title">פרטיות מלאה</h2>
+                <p class="category-description">גדרות אטומות לחלוטין המעניקות פרטיות מקסימלית והפחתת רעש של 30-40%. מושלם לחצרות פרטיות ואזורי מגורים.</p>
+                <div class="category-products-preview">
+                    <span>3 דגמים</span>
+                    <span class="dot">•</span>
+                    <span>חרמון, אדירים, אדיר</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="category-section category-semi reverse">
+            <div class="category-visual">
+                <div class="category-carousel" data-category="semi-privacy">
+                    <div class="category-slides" id="semiPrivacySlides"></div>
+                    <div class="category-nav">
+                        <button class="cat-nav cat-prev" data-category="semi-privacy">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 18l-6-6 6-6"/></svg>
+                        </button>
+                        <button class="cat-nav cat-next" data-category="semi-privacy">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="category-content">
+                <span class="category-tag">קטגוריה</span>
+                <h2 class="category-title">פרטיות חלקית</h2>
+                <p class="category-description">שילוב מושלם של פרטיות ואור. חלק תחתון אטום עם עיטורים דקורטיביים בחלק העליון. אידיאלי לאזורי בריכה וחצרות.</p>
+                <div class="category-products-preview">
+                    <span>2 דגמים</span>
+                    <span class="dot">•</span>
+                    <span>גלבוע, כרמל</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="category-section category-decorative">
+            <div class="category-visual">
+                <div class="category-carousel" data-category="decorative">
+                    <div class="category-slides" id="decorativeSlides"></div>
+                    <div class="category-nav">
+                        <button class="cat-nav cat-prev" data-category="decorative">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 18l-6-6 6-6"/></svg>
+                        </button>
+                        <button class="cat-nav cat-next" data-category="decorative">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="category-content">
+                <span class="category-tag">קטגוריה</span>
+                <h2 class="category-title">דקורטיבי</h2>
+                <p class="category-description">עיצובים פתוחים ואלגנטיים השומרים על קשר חזותי עם הסביבה. מתאים לגינות, אזורים כפריים ומרחבים ציבוריים.</p>
+                <div class="category-products-preview">
+                    <span>3 דגמים</span>
+                    <span class="dot">•</span>
+                    <span>גלבוע, כרמל, ירדן</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="category-section category-modern reverse">
+            <div class="category-visual">
+                <div class="category-carousel" data-category="modern">
+                    <div class="category-slides" id="modernSlides"></div>
+                    <div class="category-nav">
+                        <button class="cat-nav cat-prev" data-category="modern">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 18l-6-6 6-6"/></svg>
+                        </button>
+                        <button class="cat-nav cat-next" data-category="modern">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="category-content">
+                <span class="category-tag">קטגוריה</span>
+                <h2 class="category-title">מודרני</h2>
+                <p class="category-description">קווים נקיים ועיצוב מינימליסטי. פרופילים דקים ומראה עכשווי המשתלב בארכיטקטורה מודרנית.</p>
+                <div class="category-products-preview">
+                    <span>2 דגמים</span>
+                    <span class="dot">•</span>
+                    <span>חרמון, היי-טק</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         FEATURES STRIP - Icons Section
+         ======================================== -->
+    <section class="features-strip">
+        <div class="container">
+            <div class="features-strip-grid">
+                <div class="fs-item">
+                    <div class="fs-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            <path d="M9 12l2 2 4-4"/>
+                        </svg>
+                    </div>
+                    <div class="fs-text">
+                        <strong>10 שנות אחריות</strong>
+                        <span>אחריות מקיפה על כל המוצרים</span>
+                    </div>
+                </div>
+                <div class="fs-item">
+                    <div class="fs-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 6v6l4 2"/>
+                        </svg>
+                    </div>
+                    <div class="fs-text">
+                        <strong>ללא תחזוקה</strong>
+                        <span>חיסכון בזמן ובכסף</span>
+                    </div>
+                </div>
+                <div class="fs-item">
+                    <div class="fs-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="5"/>
+                            <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+                        </svg>
+                    </div>
+                    <div class="fs-text">
+                        <strong>עמידות UV</strong>
+                        <span>הגנה מפני קרינת השמש</span>
+                    </div>
+                </div>
+                <div class="fs-item">
+                    <div class="fs-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                            <path d="M22 4L12 14.01l-3-3"/>
+                        </svg>
+                    </div>
+                    <div class="fs-text">
+                        <strong>תקן ASTM</strong>
+                        <span>תקנים אמריקאיים מחמירים</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         BESTSELLER HIGHLIGHT - Full Width
+         ======================================== -->
+    <section class="bestseller-section">
+        <div class="bestseller-bg">
+            <div class="bestseller-image" id="bestsellerImage"></div>
+        </div>
+        <div class="bestseller-content">
+            <div class="container">
+                <div class="bestseller-info">
+                    <span class="bestseller-badge">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                        הנמכר ביותר
+                    </span>
+                    <h2 class="bestseller-title">דגם גלבוע</h2>
+                    <p class="bestseller-description">הדגם הפופולרי ביותר שלנו. עיצוב יוקרתי עם חלק תחתון אטום ועיטור סבכה דקורטיבי בחלק העליון. מתאים לכל סוגי החצרות.</p>
+                    <ul class="bestseller-features">
+                        <li>עיצוב יוקרתי ומרשים</li>
+                        <li>חלק תחתון אטום לפרטיות</li>
+                        <li>סבכה דקורטיבית עליונה</li>
+                        <li>מתאים לאזורי בריכה</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bestseller-gallery" id="bestsellerGallery">
+            <!-- Thumbnail gallery -->
+        </div>
+    </section>
+
+    <!-- ========================================
+         FULL CATALOGUE - All Products
+         ======================================== -->
+    <section class="catalogue-section" id="catalogue">
+        <div class="container">
+            <div class="catalogue-header">
+                <div class="catalogue-title-area">
+                    <h2 class="catalogue-title">הקטלוג המלא</h2>
+                    <p class="catalogue-subtitle">7 דגמים מעוצבים לכל סגנון</p>
+                </div>
+                <div class="filter-bar">
+                    <button class="filter-btn active" data-filter="all">
+                        <span>הכל</span>
+                        <span class="filter-count">7</span>
+                    </button>
+                    <button class="filter-btn" data-filter="privacy">
+                        <span>פרטיות מלאה</span>
+                        <span class="filter-count">3</span>
+                    </button>
+                    <button class="filter-btn" data-filter="semi-privacy">
+                        <span>פרטיות חלקית</span>
+                        <span class="filter-count">2</span>
+                    </button>
+                    <button class="filter-btn" data-filter="decorative">
+                        <span>דקורטיבי</span>
+                        <span class="filter-count">3</span>
+                    </button>
+                    <button class="filter-btn" data-filter="modern">
+                        <span>מודרני</span>
+                        <span class="filter-count">2</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="products-masonry" id="productsGrid">
+                <!-- Products will be loaded via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         LIGHTBOX MODAL
+         ======================================== -->
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+        <button class="lightbox-close" aria-label="סגור">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 6L6 18M6 6l12 12"/>
+            </svg>
+        </button>
+        <div class="lightbox-main">
+            <button class="lightbox-nav lightbox-prev" aria-label="הקודם">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M15 18l-6-6 6-6"/>
+                </svg>
+            </button>
+            <div class="lightbox-image-container">
+                <img src="" alt="" id="lightboxImage">
+            </div>
+            <button class="lightbox-nav lightbox-next" aria-label="הבא">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 18l6-6-6-6"/>
+                </svg>
+            </button>
+        </div>
+        <div class="lightbox-bottom">
+            <div class="lightbox-info">
+                <h3 id="lightboxTitle"></h3>
+                <p id="lightboxCounter"></p>
+            </div>
+            <div class="lightbox-thumbnails" id="lightboxThumbnails"></div>
+        </div>
+    </div>
+
+    <!-- ========================================
+         CONTACT TEAM SECTION
+         ======================================== -->
+    <section class="contact-team">
+        <div class="contact-team-bg"></div>
+        <div class="container">
+            <h2 class="contact-team-title">הצוות המקצועי שלנו זמין עבורכם</h2>
+            <div class="contact-team-grid">
+                <div class="team-member">
+                    <span class="member-role">מנהל מרחב מרכז</span>
+                    <a href="tel:054-5660164" class="member-contact">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                        </svg>
+                        גיא 054-5660164
+                    </a>
+                </div>
+                <div class="team-member">
+                    <span class="member-role">מנהל מרחב דרום</span>
+                    <a href="tel:054-4888801" class="member-contact">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                        </svg>
+                        דותן 054-4888801
+                    </a>
+                </div>
+                <div class="team-member">
+                    <span class="member-role">מנהל מרחב צפון</span>
+                    <a href="tel:058-6272271" class="member-contact">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                        </svg>
+                        עומר 058-6272271
+                    </a>
+                </div>
+                <div class="team-member">
+                    <span class="member-role">תיאום פגישות</span>
+                    <a href="tel:052-7829252" class="member-contact">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                        </svg>
+                        שני 052-7829252
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         FOOTER
+         ======================================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <img src="assets/images/brand/logo-fency-convert-white-01.png" alt="Fency" class="footer-logo">
+                    <p>גדרות ויניל פרימיום באיכות אמריקאית</p>
+                </div>
+                <div class="footer-stats">
+                    <div class="footer-stat">
+                        <span class="stat-value">25+</span>
+                        <span class="stat-label">שנות ניסיון</span>
+                    </div>
+                    <div class="footer-stat">
+                        <span class="stat-value">1000+</span>
+                        <span class="stat-label">לקוחות מרוצים</span>
+                    </div>
+                    <div class="footer-stat">
+                        <span class="stat-value">10</span>
+                        <span class="stat-label">שנות אחריות</span>
+                    </div>
+                </div>
+                <div class="footer-contact">
+                    <a href="tel:04-3730018" class="footer-phone">04-3730018</a>
+                    <p>מפעלי גרנות, עמק חפר</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Fency. כל הזכויות שמורות.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/catalogue.js"></script>
+</body>
+</html>

@@ -1,0 +1,175 @@
+{
+  "brand": {
+    "name": "Fency",
+    "nameHe": "פנסי",
+    "tagline": "גדרות ויניל פרימיום",
+    "phone": "04-3730018",
+    "warranty": "10 שנות אחריות",
+    "features": [
+      "ללא צורך בתחזוקה",
+      "עמידות UV",
+      "תקן ASTM אמריקאי",
+      "התקנה מקצועית"
+    ]
+  },
+  "categories": [
+    { "id": "all", "nameHe": "כל הדגמים", "nameEn": "All Models" },
+    { "id": "privacy", "nameHe": "פרטיות מלאה", "nameEn": "Full Privacy" },
+    { "id": "semi-privacy", "nameHe": "פרטיות חלקית", "nameEn": "Semi-Privacy" },
+    { "id": "decorative", "nameHe": "דקורטיבי", "nameEn": "Decorative" },
+    { "id": "modern", "nameHe": "מודרני", "nameEn": "Modern" }
+  ],
+  "products": [
+    {
+      "id": "hermon",
+      "nameHe": "דגם חרמון",
+      "nameEn": "Hermon",
+      "categories": ["privacy", "modern"],
+      "description": "עיצוב מודרני וחדשני עם מרקמים חזקים. מספק פרטיות מלאה והפחתת רעש של 30-40% מהסביבה.",
+      "features": [
+        "פרטיות מלאה",
+        "הפחתת רעש 30-40%",
+        "עיצוב מודרני",
+        "מרקמים ייחודיים"
+      ],
+      "images": [
+        "hermon/חרמון1-1024x682.jpg",
+        "hermon/חרמון4-1024x682.jpg",
+        "hermon/חרמון5-1024x682.jpg",
+        "hermon/חרמון6-1-1024x682.jpg",
+        "hermon/חרמון7-2-1024x682.jpg",
+        "hermon/חרמון8-2-1024x682.jpg",
+        "hermon/חרמון9-1-1024x682.jpg",
+        "hermon/חרמון10-1-1024x682.jpg",
+        "hermon/חרמון11-1024x682.jpg",
+        "hermon/חרמון12-1024x682.jpg"
+      ],
+      "bestseller": false
+    },
+    {
+      "id": "gilboa",
+      "nameHe": "דגם גלבוע",
+      "nameEn": "Gilboa",
+      "categories": ["semi-privacy", "decorative"],
+      "description": "הדגם הנמכר ביותר! עיצוב יוקרתי עם חלק תחתון אטום ועיטור סבכה דקורטיבי בחלק העליון. מתאים לחצרות מרווחות ואזורי בריכה.",
+      "features": [
+        "הדגם הנמכר ביותר",
+        "עיצוב יוקרתי",
+        "חלק תחתון אטום",
+        "סבכה דקורטיבית עליונה"
+      ],
+      "images": [
+        "gilboa/גלבוע1-1024x682.jpg",
+        "gilboa/גלבוע3-1024x682.jpg",
+        "gilboa/גלבוע4-1024x682.jpg",
+        "gilboa/גלבוע5-1024x682.jpg",
+        "gilboa/גלבוע6-1024x682.jpg",
+        "gilboa/גלבוע7-1024x682.jpg",
+        "gilboa/גלבוע8-1024x682.jpg",
+        "gilboa/גלבוע9-1024x682.jpg",
+        "gilboa/גלבוע10-1024x681.jpg"
+      ],
+      "bestseller": true
+    },
+    {
+      "id": "adirim",
+      "nameHe": "דגם אדירם",
+      "nameEn": "Adirim",
+      "categories": ["privacy"],
+      "description": "דגם פרימיום המשלב אלגנטיות ועמידות. מספק פרטיות מקסימלית עם מראה יוקרתי ומרשים.",
+      "features": [
+        "דגם פרימיום",
+        "פרטיות מקסימלית",
+        "מראה יוקרתי",
+        "עמידות גבוהה"
+      ],
+      "images": [
+        "adirim/אדירים1-1024x681.jpg",
+        "adirim/אדירים2-1024x681.jpg",
+        "adirim/אדירים3-1024x681.jpg",
+        "adirim/אדירים4-1024x681.jpg",
+        "adirim/אדירים5-1024x681.jpg"
+      ],
+      "bestseller": false
+    },
+    {
+      "id": "carmel",
+      "nameHe": "דגם כרמל",
+      "nameEn": "Carmel",
+      "categories": ["semi-privacy", "decorative"],
+      "description": "בהשראה ים-תיכונית עם אפשרות פרטיות חלקית. חלק תחתון סגור עם חלונות דקורטיביים בחלק העליון. מתאים במיוחד למיקומים מוגבהים.",
+      "features": [
+        "סגנון ים-תיכוני",
+        "פרטיות חלקית",
+        "חלונות דקורטיביים",
+        "מתאים למיקומים מוגבהים"
+      ],
+      "images": [
+        "carmel/כרמל1-1024x681.jpg",
+        "carmel/כרמל2-1024x681.jpg",
+        "carmel/כרמל3-1024x681.jpg",
+        "carmel/כרמל4-1024x681.jpg"
+      ],
+      "bestseller": false
+    },
+    {
+      "id": "jordan",
+      "nameHe": "דגם ירדן",
+      "nameEn": "Jordan",
+      "categories": ["decorative"],
+      "description": "עיצוב פתוח השומר על קשר חזותי עם הנוף. מתאים לאזורים כפריים ומרחבים מוסדיים.",
+      "features": [
+        "עיצוב פתוח",
+        "קשר לנוף",
+        "מתאים לאזורים כפריים",
+        "למרחבים מוסדיים"
+      ],
+      "images": [
+        "jordan/ירדן-1-1024x681.jpg",
+        "jordan/ירדן-2-1024x681.jpg",
+        "jordan/ירדן-3-1024x681.jpg",
+        "jordan/ירדן4-1024x682.jpg"
+      ],
+      "bestseller": false
+    },
+    {
+      "id": "adir",
+      "nameHe": "דגם אדיר",
+      "nameEn": "Adir",
+      "categories": ["privacy"],
+      "description": "דגם מוצק ועמיד המספק פרטיות מושלמת. בנייה חזקה ואיכותית לאורך שנים.",
+      "features": [
+        "בנייה מוצקה",
+        "פרטיות מושלמת",
+        "עמידות לאורך שנים",
+        "איכות גבוהה"
+      ],
+      "images": [
+        "adir/אדיר-1-1024x681.jpg",
+        "adir/IMG-20250817-WA0221-1024x768.jpg",
+        "adir/IMG-20250817-WA0222-1024x768.jpg",
+        "adir/IMG-20250817-WA0223-1024x768.jpg",
+        "adir/WhatsApp-Image-2025-08-17-at-11.05.58_f0cfac17-1024x768.jpg",
+        "adir/WhatsApp-Image-2025-08-17-at-11.06.22_03289551-1024x768.jpg"
+      ],
+      "bestseller": false
+    },
+    {
+      "id": "hitech",
+      "nameHe": "דגם היי-טק",
+      "nameEn": "Hi-Tech",
+      "categories": ["modern"],
+      "description": "גדר מודרנית ואוורירית עם פרופילים דקים של 3.8 ס״מ. זמין בלבן בלבד. מראה נקי ומינימליסטי.",
+      "features": [
+        "עיצוב מינימליסטי",
+        "פרופילים דקים 3.8 ס״מ",
+        "מראה אוורירי",
+        "זמין בלבן בלבד"
+      ],
+      "images": [
+        "hitech/הייטק4-1-1024x461.jpg"
+      ],
+      "bestseller": false
+    }
+  ]
+}
