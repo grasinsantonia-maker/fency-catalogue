@@ -211,6 +211,8 @@ button {
     border-radius: var(--radius-full);
     font-weight: 700;
     font-size: 0.75rem;
+    white-space: nowrap;
+    flex-shrink: 0;
 }
 
 .phone-btn {
@@ -254,12 +256,24 @@ button {
 }
 
 @media (max-width: 640px) {
-    .warranty-badge { display: none; }
+    .warranty-badge {
+        padding: 4px var(--space-sm);
+        font-size: 0.625rem;
+        gap: 4px;
+    }
+    .warranty-badge svg {
+        width: 12px;
+        height: 12px;
+    }
     .logo img { height: 36px; }
     .phone-btn {
         padding: var(--space-xs) var(--space-sm);
         border-radius: var(--radius-md);
     }
+}
+
+@media (max-width: 400px) {
+    .warranty-badge { display: none; }
 }
 
 @media (max-width: 480px) {
@@ -476,6 +490,7 @@ button {
     justify-content: center;
     border: 1px solid rgba(255, 255, 255, 0.2);
     transition: all var(--transition-base);
+    cursor: pointer;
 }
 
 .hero-nav:hover {
@@ -485,9 +500,23 @@ button {
     transform: scale(1.1);
 }
 
+.hero-nav:active {
+    transform: scale(0.95);
+}
+
+/* RTL positioning for hero arrows */
+.hero-prev {
+    order: 3;
+}
+
+.hero-next {
+    order: 1;
+}
+
 .hero-dots {
     display: flex;
     gap: var(--space-sm);
+    order: 2;
 }
 
 .hero-dot {
@@ -576,24 +605,50 @@ button {
         padding: var(--space-sm) var(--space-lg);
         font-size: 0.8125rem;
     }
+    /* Mobile: Position arrows on sides, dots at bottom */
     .hero-carousel-controls {
-        bottom: var(--space-md);
-        gap: var(--space-sm);
+        position: static;
+        transform: none;
+        display: block;
     }
     .hero-nav {
-        width: 36px;
-        height: 36px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 44px;
+        height: 44px;
+        background: rgba(0, 0, 0, 0.4);
+        border: none;
+    }
+    .hero-nav:active {
+        background: var(--accent-gold);
+        color: var(--black);
+    }
+    .hero-prev {
+        right: var(--space-sm);
+        left: auto;
+    }
+    .hero-next {
+        left: var(--space-sm);
+        right: auto;
     }
     .hero-nav svg {
-        width: 16px;
-        height: 16px;
+        width: 20px;
+        height: 20px;
+    }
+    .hero-dots {
+        position: absolute;
+        bottom: var(--space-md);
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 20;
     }
     .hero-dot {
-        width: 6px;
-        height: 6px;
+        width: 8px;
+        height: 8px;
     }
     .hero-dot.active {
-        width: 20px;
+        width: 24px;
     }
     .hero-scroll-hint { display: none; }
 }
@@ -648,24 +703,29 @@ button {
         padding: 10px var(--space-md);
         font-size: 0.75rem;
     }
-    .hero-carousel-controls {
-        bottom: var(--space-sm);
-        gap: var(--space-xs);
-    }
     .hero-nav {
-        width: 32px;
-        height: 32px;
+        width: 40px;
+        height: 40px;
+    }
+    .hero-prev {
+        right: var(--space-xs);
+    }
+    .hero-next {
+        left: var(--space-xs);
     }
     .hero-nav svg {
-        width: 14px;
-        height: 14px;
+        width: 18px;
+        height: 18px;
+    }
+    .hero-dots {
+        bottom: var(--space-sm);
     }
     .hero-dot {
-        width: 5px;
-        height: 5px;
+        width: 6px;
+        height: 6px;
     }
     .hero-dot.active {
-        width: 16px;
+        width: 20px;
     }
 }
 
